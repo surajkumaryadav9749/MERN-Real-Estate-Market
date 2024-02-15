@@ -5,10 +5,12 @@ import Profile from "./Pages/Profile";
 import SignIn from "./Pages/SignIn";
 import SignOut from "./Pages/SignOut";
 import { Routes, Route } from "react-router-dom";
+import Header from "./Componets/Header";
 
 const App = () => {
   return (
     <div>
+      <Header />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/profile" element={<Profile />} />
